@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="def showText yesText">
+        <img src="img/mine.png" alt="" class="mine">
+        <form name ="form_one" novalidate class="form_one">
+            
+            <input type="text" name="login" id="login" placeholder="login" required pattern="[А-Яа-я]+" class="check">
+            <label for="login"></label>
+
+            <br>
+
+            <input type="date" name="date" id="date" min="1924-10-01" max="2024-10-01" required class="check">
+            <label for="date"></label>
+    
+            <br>
+    
+            <p>пол</p>
+            <input type="radio" name="sex" value="yes" checked="checked">yes
+            <input type="radio" name="sex" value="no">no
+    
+            <br>
+    
+    
+            <input type="submit"  id="btn_sub_one">
+            
+        </form>
+    
+    </div>
+    
+    <div class="def">
+        <form name ="form_two" novalidate class="form">
+            <p>Кто это?</p>
+            <img src="img/chiken.png" alt="">
+            <input type="text" name="quest_one" id="quest_one" placeholder="quest_one" required pattern="[кК]урица">
+
+            <br>
+
+            <p>Что это за блок?</p>
+            <img src="img/grass.png" alt="">
+            <input type="text" name="quest_two" id="quest_two" placeholder="quest_two" required pattern="[тТ]рава">
+            
+            <br>
+
+            <p>В каком это измерение?</p>
+            <img src="img/end.png" alt="">
+            <input type="text" name="quest_three" id="quest_three" placeholder="quest_three" required pattern="[кК]рай">
+
+            <br>
+    
+            <input type="submit"  id="btn_sub_two">
+
+            
+        </form>
+        <button id="btn_backward"><<<</button>
+    </div>
+
+    <div class="def">
+        <form name ="form_three" novalidate class="form_three">
+            
+            <p>Какого размера блок?</p>
+            <input type="radio" name="quest_four" value="true">1m
+            <input type="radio" name="quest_four">2m
+            <input type="radio" name="quest_four">10m
+            <input type="radio" name="quest_four">0.5m
+    
+            <br>
+
+            <p>Как зовут главного героя игры </p>
+            <input type="radio" name="quest_five">Джек Блек
+            <input type="radio" name="quest_five">Олег
+            <input type="radio" name="quest_five">Маркус
+            <input type="radio" name="quest_five" value="true">Стив
+
+            <br>
+
+            <p>Какого моба нет в игре?</p>
+            <input type="radio" name="quest_six">Панда
+            <input type="radio" name="quest_six">Пчела
+            <input type="radio" name="quest_six" value="true">Краб
+            <input type="radio" name="quest_six" >Броненосец
+    
+            <br>
+    
+            <input type="submit"  id="btn_sub_three">
+            
+        </form>
+        <button id="btn_backward_2"><<<</button>
+        
+    </div>
+    
+
+    <div class="def">
+        <div>
+            <div id="output_user_data"></div>
+            <br>
+            <div id="output_result"></div>
+
+        </div>
+        <button id="btn_goback">GO BACK</button>
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

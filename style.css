@@ -1,0 +1,45 @@
+:root{
+    --el : 0;
+}
+body{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    color: white;
+    background-color: rgb(84, 108, 108);
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input{
+    border-color: white;
+    color: rgb(84, 108, 108);
+}
+img{
+    height: 110px;
+}
+.mine{
+    height: 300px;
+}
+
+.def{
+    transition: 1s;
+    display: none;
+    opacity: 0;
+    transform: translateX(var(--el));
+    flex-direction: column;
+    justify-content: center;
+
+    height: 700px;
+    width: 1000px;
+}
+
+.showText{
+    display: flex;
+}
+.yesText{
+    opacity: 1;
+
+}
+
